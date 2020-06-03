@@ -6,7 +6,7 @@ function weather() {
 
     function givePosition(position) {
         fetch(
-                `http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=afe224adeda3126a4470bdcc75a93e2f`
+                `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=afe224adeda3126a4470bdcc75a93e2f`
             )
             .then(Response => Response.json())
             .then(data => {
